@@ -1,0 +1,51 @@
+.work {
+    display: flex;
+    gap: 30px;
+    padding-inline-start: 0px;
+
+    &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+    &__name {
+    display: flex;
+    color: var(--title-primary-fon);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+    &__list {
+    position: relative;
+    display: block;
+}
+
+
+    &__box {
+    position: absolute;
+    display: flex;
+    top: 76%;
+    right: 0%;
+    width: 370px;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--work-img-title-color);
+}
+}
+
+@media screen and (min-width:0px) and (max-width:1199px) {
+    .worker {
+        display: none;
+    }
+}
+

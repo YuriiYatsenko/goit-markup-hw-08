@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--title-primary-fon);
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+
+}

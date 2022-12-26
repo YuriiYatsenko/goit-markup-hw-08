@@ -1,0 +1,25 @@
+.button {
+    cursor: pointer;
+    color: var(--button-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    font-Family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    border-color: var(--border-color);
+    padding: 6px 22px;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus,
+    &:active {
+    color: var(--title-primary-fon);
+    background-color: var(--accent-color);
+    box-shadow: 0 4px 4px var(--background-color-shadov);
+    }
+}
+

@@ -1,0 +1,17 @@
+.header__logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+    width: 145px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.header__logostudio {
+    color: var(--fon-logostudio);
+}
