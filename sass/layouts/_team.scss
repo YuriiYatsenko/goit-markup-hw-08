@@ -1,5 +1,7 @@
 .team {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     padding-inline-start: 0px;
 
@@ -76,12 +78,22 @@
 }
 
     &__card {
-    width: 270px;
-    height: 428px;
     box-shadow: 0 4px 4px var(--background-color-shadov);
     border-radius: 4px;
-}
+    height: auto;
 
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+        
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+        
+    @media screen and (min-width:1200px) {
+        width: 270px;
+    }
+}
 
     &__icons {
     fill: currentColor;
