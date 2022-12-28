@@ -14,7 +14,7 @@ html {
     --title-text-color: #757575;
     --accent-color: #2196F3;
     --title-primary-fon: #FFFFFF;
-    --fon-teamm: #F5F4FA;
+    --fon-teams: #F5F4FA;
     --fon-logostudio: #000000;
     --background-color: #2F303A;
     --button-active: #188CE8;
@@ -561,7 +561,7 @@ body {
     height: 120px;
     justify-content: center;
     border-radius: 4px;
-    background-color: var(--fon-teamm);
+    background-color: var(--fon-teams);
     margin-bottom: 30px;
 }
 
@@ -646,7 +646,7 @@ body {
 }
 
 .team__section {
-    background-color: var(--fon-teamm);
+    background-color: var(--fon-teams);
 }
 
 .team {

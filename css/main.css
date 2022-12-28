@@ -3,7 +3,7 @@
   --title-text-color: #757575;
   --accent-color: #2196F3;
   --title-primary-fon: #FFFFFF;
-  --fon-teamm: #F5F4FA;
+  --fon-teams: #F5F4FA;
   --fon-logostudio: #000000;
   --background-color: #2F303A;
   --button-active: #188CE8;
@@ -702,7 +702,7 @@ a {
   margin-bottom: 50px;
 }
 .team__section {
-  background-color: var(--fon-teamm);
+  background-color: var(--fon-teams);
 }
 .team__text {
   padding-top: 30px;
@@ -849,7 +849,7 @@ a {
   display: flex;
   justify-content: center;
   border-radius: 4px;
-  background-color: var(--fon-teamm);
+  background-color: var(--fon-teams);
   margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
@@ -882,6 +882,7 @@ a {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: left;
 }
 @media screen and (min-width: 480px), (max-width: 768px) {
   .features__title {
