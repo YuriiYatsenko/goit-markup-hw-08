@@ -5,11 +5,18 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    margin-right: 93px;
     width: 145px;
     padding-top: 25px;
     padding-bottom: 25px;
     display: flex;
+
+    @media screen and (min-width:768px) {
+    margin-right: 87px;
+    }
+        
+    @media screen and (min-width:1200px) {
+    margin-right: 93px;
+    }
 }
 
 .header__logostudio {

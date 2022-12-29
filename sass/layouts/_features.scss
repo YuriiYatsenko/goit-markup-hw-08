@@ -60,9 +60,13 @@
         @media screen and (min-width:1200px) {
         text-align: left;
     }
+    }
+
 }
 
-
 .section__features {
+
+    @media screen and (min-width:1200px) {
     padding-bottom: 10px;
+    }
 }
