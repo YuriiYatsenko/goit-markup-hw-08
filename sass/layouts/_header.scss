@@ -1,3 +1,7 @@
+.header__navigation {
+    display: flex;
+}
+
 .header__link.header__current {
     color: var(--accent-color);
 }
@@ -26,6 +30,10 @@
 .header__container {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+    display: none;
+    }
 }
 
 .header__list {
@@ -36,10 +44,12 @@
 
     @media screen and (min-width:768px) {
     display: block;
+    margin-left: 68px;
     }
 
     @media screen and (min-width:1200px) {
     display: flex;
+    margin-left: 298px;
     }
 }
 
