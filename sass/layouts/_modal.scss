@@ -23,8 +23,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 530px;
-    height: 581px;
     padding: 40px;
 
     border-radius: 4px;
@@ -33,6 +31,15 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:480px),(min-width:768px) {
+        width: 450px;
+        height: 609px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 530px;
+        height: 581px;
+    }
 }
 
 .modal__close {
@@ -50,8 +57,6 @@
 
 .modal__button {
     position: absolute;
-    top: 1.5%;
-    left: 93%;
     width: 30px;
     height: 30px;
     background-color: #ffffff;
@@ -62,7 +67,16 @@
     &:hover,
     &:focus {
     fill: var(--accent-color);
-}
+    }
+
+    @media screen and (min-width:480px),(min-width:768px) {
+    top: 1%;
+    left: 92%;
+    }
+    @media screen and (min-width:1200px) {
+    top: 1.5%;
+    left: 93%;
+    }
 }
 
 .modal__input {
@@ -171,11 +185,19 @@
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     color: rgba(117, 117, 117, 1);
+
+    @media screen and (min-width:480px),(min-width:768px) {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+        
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
 
 
@@ -200,12 +222,19 @@
 
 .modal__contract {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--modal-input-contract-color);
     text-decoration-line: underline;
     cursor: pointer;
+
+    @media screen and (min-width:480px),(min-width:768px) {
+        font-size: 12px;
+        line-height: 1.2;
+    }     
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
 
 .modal_submit {

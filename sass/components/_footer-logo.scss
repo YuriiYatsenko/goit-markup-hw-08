@@ -5,9 +5,18 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    margin-right: 93px;
+    // margin-right: 93px;
     display: flex;
     margin-bottom: 20px;
+
+    @media screen and (min-width:480px),
+    (max-width:767px) {
+    justify-content: center;
+    }
+        
+    @media screen and (min-width:1199px) {
+    justify-content: stretch;
+    }
 }
 
 .foooter__logostudio {

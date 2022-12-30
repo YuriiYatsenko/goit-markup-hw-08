@@ -80,15 +80,21 @@
     margin-bottom:302px;
 }
 
-.mobile-menu .link {
+.mobile-menu__nav {
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
     display: block;
-    padding: 10px;
     color:black;
     text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & {
+        margin-bottom: 35px;
+    }
 
     &:hover,
     &:focus {
@@ -98,6 +104,44 @@
 
 .mobile-menu__contacts {
     margin-bottom: 64px;
+
+    li {
+    margin-bottom: 32px;
+    }
+}
+
+
+
+.mobile-menu__tell {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.mobile-menu__letter {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.7px;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+        
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .mobile-menu__socials-links {
@@ -106,9 +150,19 @@
     font-size: 18px;
     line-height: 1px;
     letter-spacing: 0.02em;
+    cursor: pointer;
+    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    a {
+    border-left: 1px solid var(--header-portfolio);
+    margin-left: 10px;
+    padding-left: 10px;
     }
 }

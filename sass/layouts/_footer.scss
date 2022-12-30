@@ -1,5 +1,5 @@
 .footer {
-    max-width: 1600px;
+    max-width: 100%;
     background-color: var(--background-color);
     padding-top: 56px;
     padding-bottom: 56px;
@@ -7,19 +7,34 @@
 
 .footer__box {
     display: flex;
-    align-items: baseline;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width:480px) {
+    @media screen and (min-width:480px){
         width: 450px;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
     }   
     @media screen and (min-width:768px) {
         width: 768px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: unset;
     }  
     @media screen and (min-width:1200px) {
         width: 1170px;
         justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.footer__box-div {
+    @media screen and (min-width:480px),(max-width:767px) {
+    text-align: center;
+    }   
+    @media screen and (min-width:1199px) {
+    text-align: left;
     }
 }
 
@@ -102,13 +117,17 @@
 
 .footer__form {
     display: flex;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__input {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 358px;
     height: 50px;
     background: transparent;
     padding: 15px 16px;
@@ -128,7 +147,15 @@
     height: 20px;
     letter-spacing: 0.03em;
     color: var(--footer-placeholder-color);
-}
+    }
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+    }
+    @media screen and (min-width:1199px) {
+    width: 358px;
+    }
 }
 
 .footer__button {
