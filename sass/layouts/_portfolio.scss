@@ -1,6 +1,8 @@
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 
     &__nav {
     display: flex;
@@ -45,9 +47,16 @@
 }
 
 .portfolio__elements {
+
+    @media screen and (min-width:480px) {
+    width: 450px;
+    }   
+    @media screen and (min-width:768px) {
+    width: 354px;
+    }   
+    @media screen and (min-width:1200px) {
     width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    }
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -71,8 +80,22 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media screen and (min-width:480px) {
+    width: 450px;
+    height: 294px;
+    }
+        
+    @media screen and (min-width:768px) {
+    width: 354px;
+    height: 294px;
+    }
+        
+    @media screen and (min-width:1200px) {
     width: 370px;
     height: 294px;
+    }
+
     background-color: var(--portfolio-animation);
 
     transform: translatey(100%);
