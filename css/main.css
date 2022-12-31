@@ -749,7 +749,8 @@ a {
 @media screen and (min-width: 1200px) {
   .footer__box-adresoc {
     width: 1170px;
-    gap: 60px;
+    gap: 70px;
+    justify-content: normal;
   }
 }
 
