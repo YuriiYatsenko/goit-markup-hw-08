@@ -721,8 +721,35 @@ a {
 @media screen and (min-width: 1200px) {
   .footer__box {
     width: 1170px;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
+  }
+}
+
+.footer__box-adresoc {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .footer__box-adresoc {
+    width: 450px;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box-adresoc {
+    width: 768px;
+    justify-content: center;
+    flex-direction: unset;
+    align-items: baseline;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box-adresoc {
+    width: 1170px;
+    gap: 60px;
   }
 }
 
